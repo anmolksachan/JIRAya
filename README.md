@@ -43,7 +43,7 @@ This will test multiple JIRA instances at the URLs specified in the `<file>`.
 
 ### Check multiple JIRA instances via Way Back URLs
 
-<img width="740" alt="image" src="https://user-images.githubusercontent.com/60771253/228201093-913df1ad-8aee-4fb3-a16c-48f27ba3d98f.png">
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/60771253/228210469-9995d1cb-bd2d-42c8-831f-6c206d788e0d.png">
 
 `python JIRAya.py --TheTimeMachine <url/domain>` 
 
