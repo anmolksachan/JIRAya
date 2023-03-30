@@ -67,6 +67,7 @@ The following tests are performed against the JIRA instance:
 | Cross-Site Scripting (XSS) vulnerability      |   Check if the script is vulnerable to cross-site scripting (XSS) attacks  |
 
 -   Next update will be released soon with more test cases
+-   Reference: [Atlassian Jira CVE Details](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-8170/Atlassian-Jira.html)
 
 ## Author
 
