@@ -53,13 +53,19 @@ This module is inspired from my other tool "[The Time Machine](https://github.co
 
 The following tests are performed against the JIRA instance:
 
--   Check for unauthenticated access to JIRA dashboards
--   Check for unauthenticated access to JIRA project categories
--   Check for unauthenticated access to JIRA resolutions
--   Check for unauthenticated access to installed JIRA gadgets
--   Check for unauthenticated access to JIRA admin projects
--   Check for CVE-2020-14179: Information disclosure about custom fields and custom SLA
--   Check for CVE-2019-3403: Information disclosure of all existing users on the JIRA server
+| Test case	| Description |
+| --------- | -----|
+| Unauthenticated access to JIRA dashboards	  | Check if the script can access JIRA dashboards without authentication |
+| Unauthenticated access to JIRA project categories	     |  Check if the script can access JIRA project categories without authentication |
+| Unauthenticated access to JIRA resolutions	       |  Check if the script can access JIRA resolutions without authentication   |
+| Unauthenticated access to installed JIRA gadgets	      |   Check if the script can access installed JIRA gadgets without authentication  |
+| Unauthenticated access to JIRA admin projects	      |  Check if the script can access JIRA admin projects without authentication   |
+| CVE-2020-14179: Information disclosure about custom fields and custom SLA	     |   Check for information disclosure vulnerability that could be exploited to get custom field and custom SLA information  |
+| CVE-2019-3403: Information disclosure of all existing users on the JIRA server      |  Check for information disclosure vulnerability that could be exploited to get all existing users on the JIRA server   |
+| CVE-2019-8449: Information disclosure of all users in JIRA server   |  Check for information disclosure vulnerability that could be exploited to get all users on the JIRA server   |
+| Blind SSRF vulnerability	      |  Check if the script can send HTTP requests to an external URL without the user's knowledge   |
+| Cross-Site Scripting (XSS) vulnerability      |   Check if the script is vulnerable to cross-site scripting (XSS) attacks  |
+
 -   Next update will be released soon with more test cases
 
 ## Author
