@@ -1,7 +1,7 @@
 
 # JIRA"YA - JIRA Yet Another vulnerability Analyzer by @FR13ND0x7f
 
-<img width="955" alt="image" src="https://user-images.githubusercontent.com/60771253/228196580-f95a0fdf-adf9-4c04-93bb-75adb81e638b.png">
+<img width="955" alt="image" src="https://github.com/anmolksachan/anmolksachan.github.io/blob/main/img/JIRAya-Final.gif">
 
 ## What is JIRA?
 JIRA is a popular project management and issue tracking software developed by Atlassian. It is widely used in software development teams to track and manage tasks, bugs, and issues throughout the software development process.
@@ -22,6 +22,8 @@ This is an active scanner since it interacts with the host to check wheither is 
 -   requests package
 
 ## Usage
+
+<img width="955" alt="image" src="https://user-images.githubusercontent.com/60771253/228196580-f95a0fdf-adf9-4c04-93bb-75adb81e638b.png">
 
 You can run the script by running the `JIRAya.py` file with the following command line options:
 
