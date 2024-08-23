@@ -67,6 +67,8 @@ The following tests are performed against the JIRA instance:
 | CVE-2019-8449: Information disclosure of all users in JIRA server   |  Check for information disclosure vulnerability that could be exploited to get all users on the JIRA server   |
 | Blind SSRF vulnerability	      |  Check if the script can send HTTP requests to an external URL without the user's knowledge   |
 | Cross-Site Scripting (XSS) vulnerability      |   Check if the script is vulnerable to cross-site scripting (XSS) attacks  |
+| Authentication Bypass in Seraph - CVE-2022-0540 | https://github.com/Pear1y/CVE-2022-0540-RCE |
+| Authentication Bypass in Seraph - CVE-2022-0540 | Limited attack, can edit configurations |
 
 -   Next update will be released soon with more test cases
 -   Reference: [Atlassian Jira CVE Details](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-8170/Atlassian-Jira.html)
