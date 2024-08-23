@@ -78,6 +78,8 @@ def JIRA_TestCases(url):
     cve20193402 = f"{url}/secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=x2rnu%3Cscript%3Ealert(1)%3C%2fscript%3Et1nmk&Search=Search"
     cve20182082 = f"{url}/plugins/servlet/Wallboard/?dashboardId"
     cve20179506 = f"{url}/plugins/servlet/oauth/users/icon-uri?consumerUri=https://ipinfo.io/json"
+    cve20220540 = f"{url}/InsightPluginShowGeneralConfiguration.jspa;"
+    cve202205401 = f"{url}/secure/WBSGanttManageScheduleJobAction.jspa;"
     uaed = f"{url}/secure/popups/UserPickerBrowser.jspa"
 
     # Check for unauthenticated access to JIRA dashboards
@@ -125,6 +127,22 @@ def JIRA_TestCases(url):
         response = requests.get(query_component_url)
         if response.status_code == 200 and "custom field" in response.text:
             vulnerabilities.append(f"+ CVE-2020-14179 : Information disclosure about custom fields and custom SLA | URL : {query_component_url}")
+    except:
+        pass
+
+    # Check for CVE-2022-0540
+    try:
+        response = requests.get(cve20220540)
+        if response.status_code == 200 and "General Insight Configuration" in response.text:
+            vulnerabilities.append(f"+ CVE-2022-0540 : Atlassian Jira Seraph - Authentication Bypass | URL : {cve20220540}")
+    except:
+        pass
+
+    # Check for CVE-2022-05401
+    try:
+        response = requests.get(cve202205401)
+        if response.status_code == 200 and "WBS Gantt-Chart" in response.text:
+            vulnerabilities.append(f"+ CVE-2022-0540 : Atlassian Jira Seraph Authentication Bypass RCE（CVE-2022-0540) | URL : {cve202205401}")
     except:
         pass
 
